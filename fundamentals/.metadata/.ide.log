@@ -555,3 +555,31 @@
 2023-03-14 17:33:13,583 [INFO] ApiDb:452 - User favorites MCUs=[]
 2023-03-14 17:33:13,600 [INFO] ApiDb:448 - Save user favorites file C:\Users\fcvaz/.stm32cubeide/favorites.boards.txt: 0 item(s)
 2023-03-14 17:33:13,600 [INFO] ApiDb:452 - User favorites Boards=[]
+2023-03-14 18:54:41,782 [INFO] MainUpdater:2854 - connection check result : 10
+2023-03-14 18:54:42,133 [INFO] McuFinderGlobals:66 - Set McuFinderConnectedMode to true
+2023-03-14 18:54:42,157 [INFO] MultiScanPanel:200 - Auto-refresh data requested => check proxy status ongoing
+2023-03-14 18:54:42,166 [INFO] FinderPluginLoader:95 - Searching for filters in installed packs
+2023-03-14 18:54:43,305 [INFO] LoadUrlFilesThread:185 - End of LoadServerUrlFiles without Thread
+2023-03-14 18:54:43,306 [INFO] DetailPanel:341 - Set advertising image to C:/Users/fcvaz/STM32Cube/Repository/\en.prom-stm32h5-mcu-finder.jpg
+2023-03-14 18:54:48,513 [INFO] MultiScanPanel:200 - Auto-refresh data requested => check proxy status ongoing
+2023-03-14 18:54:48,559 [INFO] LoadUrlFilesThread:185 - End of LoadServerUrlFiles without Thread
+2023-03-14 18:54:48,559 [INFO] DetailPanel:341 - Set advertising image to C:/Users/fcvaz/STM32Cube/Repository/\en.prom-stm32h5-mcu-finder.jpg
+2023-03-14 18:55:25,602 [INFO] McuFinderGlobals:66 - Set McuFinderConnectedMode to true
+2023-03-14 18:55:25,605 [INFO] ApiDb:448 - Save user favorites file C:\Users\fcvaz/.stm32cubeide/favorites.mcus.txt: 0 item(s)
+2023-03-14 18:55:25,605 [INFO] ApiDb:452 - User favorites MCUs=[]
+2023-03-14 18:55:25,607 [INFO] ApiDb:448 - Save user favorites file C:\Users\fcvaz/.stm32cubeide/favorites.boards.txt: 0 item(s)
+2023-03-14 18:55:25,608 [INFO] ApiDb:452 - User favorites Boards=[]
+2023-03-14 19:01:14,676 [INFO] MainUpdater:2854 - connection check result : 10
+2023-03-14 19:01:14,830 [INFO] McuFinderGlobals:66 - Set McuFinderConnectedMode to true
+2023-03-14 19:01:14,831 [INFO] MultiScanPanel:200 - Auto-refresh data requested => check proxy status ongoing
+2023-03-14 19:01:14,831 [INFO] FinderPluginLoader:95 - Searching for filters in installed packs
+2023-03-14 19:01:15,588 [INFO] LoadUrlFilesThread:185 - End of LoadServerUrlFiles without Thread
+2023-03-14 19:01:15,589 [INFO] DetailPanel:341 - Set advertising image to C:/Users/fcvaz/STM32Cube/Repository/\en.prom-stm32h5-mcu-finder.jpg
+2023-03-14 19:01:18,628 [INFO] MultiScanPanel:200 - Auto-refresh data requested => check proxy status ongoing
+2023-03-14 19:01:18,672 [INFO] LoadUrlFilesThread:185 - End of LoadServerUrlFiles without Thread
+2023-03-14 19:01:18,672 [INFO] DetailPanel:341 - Set advertising image to C:/Users/fcvaz/STM32Cube/Repository/\en.prom-stm32h5-mcu-finder.jpg
+2023-03-14 19:01:50,484 [INFO] McuFinderGlobals:66 - Set McuFinderConnectedMode to true
+2023-03-14 19:01:50,487 [INFO] ApiDb:448 - Save user favorites file C:\Users\fcvaz/.stm32cubeide/favorites.mcus.txt: 0 item(s)
+2023-03-14 19:01:50,487 [INFO] ApiDb:452 - User favorites MCUs=[]
+2023-03-14 19:01:50,489 [INFO] ApiDb:448 - Save user favorites file C:\Users\fcvaz/.stm32cubeide/favorites.boards.txt: 0 item(s)
+2023-03-14 19:01:50,489 [INFO] ApiDb:452 - User favorites Boards=[]
