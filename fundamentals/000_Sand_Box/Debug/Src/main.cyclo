@@ -1,0 +1,5 @@
+main.c:27:5:add	1
+main.c:32:8:adds	1
+main.c:37:6:add_by_pointer	1
+main.c:42:6:swapnum	1
+main.c:49:5:main	1

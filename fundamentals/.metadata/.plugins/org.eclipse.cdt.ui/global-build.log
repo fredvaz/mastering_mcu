@@ -1,18 +1,199 @@
-19:05:26 **** Incremental Build of configuration Debug for project x00_Sand_Box ****
+17:45:01 **** Incremental Build of configuration Debug for project 005_HSI_Measurement ****
 make -j8 all 
 arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32L4R5ZITx -DSTM32L4PLUS -DNUCLEO_L4R5ZI -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-../Src/main.c: In function 'main':
-../Src/main.c:31:15: warning: variable 'p1' set but not used [-Wunused-but-set-variable]
-   31 |  struct Point p1;
-      |               ^~
-arm-none-eabi-g++ -o "x00_Sand_Box.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\fcvaz\Dev\mastering_mcu\fundamentals\x00_Sand_Box\STM32L4R5ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="x00_Sand_Box.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: x00_Sand_Box.elf
+arm-none-eabi-gcc -o "005_HSI_Measurement.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\fcvaz\Dev\mastering_mcu\fundamentals\005_HSI_Measurement\STM32L4R5ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="005_HSI_Measurement.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 005_HSI_Measurement.elf
  
-arm-none-eabi-size   x00_Sand_Box.elf 
-arm-none-eabi-objdump -h -S  x00_Sand_Box.elf  > "x00_Sand_Box.list"
+arm-none-eabi-size   005_HSI_Measurement.elf 
+arm-none-eabi-objdump -h -S  005_HSI_Measurement.elf  > "005_HSI_Measurement.list"
    text	   data	    bss	    dec	    hex	filename
-    700	      8	   1568	   2276	    8e4	x00_Sand_Box.elf
+    784	      8	   1568	   2360	    938	005_HSI_Measurement.elf
 Finished building: default.size.stdout
  
-Finished building: x00_Sand_Box.list
+Finished building: 005_HSI_Measurement.list
+ 
+17:45:07 **** Incremental Build of configuration Debug for project 005_HSI_Measurement ****
+make -j8 all 
+arm-none-eabi-size   005_HSI_Measurement.elf 
+   text	   data	    bss	    dec	    hex	filename
+    784	      8	   1568	   2360	    938	005_HSI_Measurement.elf
+Finished building: default.size.stdout
+ 
+17:56:56 **** Incremental Build of configuration Debug for project 005_HSI_Measurement ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32L4R5ZITx -DSTM32L4PLUS -DNUCLEO_L4R5ZI -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "005_HSI_Measurement.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\fcvaz\Dev\mastering_mcu\fundamentals\005_HSI_Measurement\STM32L4R5ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="005_HSI_Measurement.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 005_HSI_Measurement.elf
+ 
+arm-none-eabi-size   005_HSI_Measurement.elf 
+arm-none-eabi-objdump -h -S  005_HSI_Measurement.elf  > "005_HSI_Measurement.list"
+   text	   data	    bss	    dec	    hex	filename
+    784	      8	   1568	   2360	    938	005_HSI_Measurement.elf
+Finished building: default.size.stdout
+ 
+Finished building: 005_HSI_Measurement.list
+ 
+18:00:14 **** Incremental Build of configuration Debug for project 005_HSI_Measurement ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32L4R5ZITx -DSTM32L4PLUS -DNUCLEO_L4R5ZI -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "005_HSI_Measurement.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\fcvaz\Dev\mastering_mcu\fundamentals\005_HSI_Measurement\STM32L4R5ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="005_HSI_Measurement.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 005_HSI_Measurement.elf
+ 
+arm-none-eabi-size   005_HSI_Measurement.elf 
+arm-none-eabi-objdump -h -S  005_HSI_Measurement.elf  > "005_HSI_Measurement.list"
+   text	   data	    bss	    dec	    hex	filename
+    784	      8	   1568	   2360	    938	005_HSI_Measurement.elf
+Finished building: default.size.stdout
+ 
+Finished building: 005_HSI_Measurement.list
+ 
+18:04:45 **** Incremental Build of configuration Debug for project 005_HSI_Measurement ****
+make -j8 all 
+arm-none-eabi-size   005_HSI_Measurement.elf 
+   text	   data	    bss	    dec	    hex	filename
+    784	      8	   1568	   2360	    938	005_HSI_Measurement.elf
+Finished building: default.size.stdout
+ 
+18:20:47 **** Incremental Build of configuration Debug for project 005_HSI_Measurement ****
+make -j8 all 
+arm-none-eabi-size   005_HSI_Measurement.elf 
+   text	   data	    bss	    dec	    hex	filename
+    784	      8	   1568	   2360	    938	005_HSI_Measurement.elf
+Finished building: default.size.stdout
+ 
+18:36:22 **** Incremental Build of configuration Debug for project 005_HSI_Measurement ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32L4R5ZITx -DSTM32L4PLUS -DNUCLEO_L4R5ZI -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "005_HSI_Measurement.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\fcvaz\Dev\mastering_mcu\fundamentals\005_HSI_Measurement\STM32L4R5ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="005_HSI_Measurement.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 005_HSI_Measurement.elf
+ 
+arm-none-eabi-size   005_HSI_Measurement.elf 
+arm-none-eabi-objdump -h -S  005_HSI_Measurement.elf  > "005_HSI_Measurement.list"
+   text	   data	    bss	    dec	    hex	filename
+    796	      8	   1568	   2372	    944	005_HSI_Measurement.elf
+Finished building: default.size.stdout
+ 
+Finished building: 005_HSI_Measurement.list
+ 
+18:40:42 **** Incremental Build of configuration Debug for project 005_HSI_Measurement ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32L4R5ZITx -DSTM32L4PLUS -DNUCLEO_L4R5ZI -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "005_HSI_Measurement.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\fcvaz\Dev\mastering_mcu\fundamentals\005_HSI_Measurement\STM32L4R5ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="005_HSI_Measurement.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 005_HSI_Measurement.elf
+ 
+arm-none-eabi-size   005_HSI_Measurement.elf 
+arm-none-eabi-objdump -h -S  005_HSI_Measurement.elf  > "005_HSI_Measurement.list"
+   text	   data	    bss	    dec	    hex	filename
+    796	      8	   1568	   2372	    944	005_HSI_Measurement.elf
+Finished building: default.size.stdout
+ 
+Finished building: 005_HSI_Measurement.list
+ 
+18:42:02 **** Incremental Build of configuration Debug for project 005_HSI_Measurement ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32L4R5ZITx -DSTM32L4PLUS -DNUCLEO_L4R5ZI -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "005_HSI_Measurement.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\fcvaz\Dev\mastering_mcu\fundamentals\005_HSI_Measurement\STM32L4R5ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="005_HSI_Measurement.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 005_HSI_Measurement.elf
+ 
+arm-none-eabi-size   005_HSI_Measurement.elf 
+arm-none-eabi-objdump -h -S  005_HSI_Measurement.elf  > "005_HSI_Measurement.list"
+   text	   data	    bss	    dec	    hex	filename
+    784	      8	   1568	   2360	    938	005_HSI_Measurement.elf
+Finished building: default.size.stdout
+ 
+Finished building: 005_HSI_Measurement.list
+ 
+18:45:15 **** Incremental Build of configuration Debug for project 005_HSI_Measurement ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32L4R5ZITx -DSTM32L4PLUS -DNUCLEO_L4R5ZI -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "005_HSI_Measurement.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\fcvaz\Dev\mastering_mcu\fundamentals\005_HSI_Measurement\STM32L4R5ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="005_HSI_Measurement.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 005_HSI_Measurement.elf
+ 
+arm-none-eabi-size   005_HSI_Measurement.elf 
+arm-none-eabi-objdump -h -S  005_HSI_Measurement.elf  > "005_HSI_Measurement.list"
+   text	   data	    bss	    dec	    hex	filename
+    796	      8	   1568	   2372	    944	005_HSI_Measurement.elf
+Finished building: default.size.stdout
+ 
+Finished building: 005_HSI_Measurement.list
+ 
+18:50:47 **** Incremental Build of configuration Debug for project 005_HSI_Measurement ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32L4R5ZITx -DSTM32L4PLUS -DNUCLEO_L4R5ZI -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "005_HSI_Measurement.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\fcvaz\Dev\mastering_mcu\fundamentals\005_HSI_Measurement\STM32L4R5ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="005_HSI_Measurement.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 005_HSI_Measurement.elf
+ 
+arm-none-eabi-size   005_HSI_Measurement.elf 
+arm-none-eabi-objdump -h -S  005_HSI_Measurement.elf  > "005_HSI_Measurement.list"
+   text	   data	    bss	    dec	    hex	filename
+    792	      8	   1568	   2368	    940	005_HSI_Measurement.elf
+Finished building: default.size.stdout
+ 
+Finished building: 005_HSI_Measurement.list
+ 
+18:56:08 **** Incremental Build of configuration Debug for project 005_HSI_Measurement ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32L4R5ZITx -DSTM32L4PLUS -DNUCLEO_L4R5ZI -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "005_HSI_Measurement.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\fcvaz\Dev\mastering_mcu\fundamentals\005_HSI_Measurement\STM32L4R5ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="005_HSI_Measurement.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 005_HSI_Measurement.elf
+ 
+arm-none-eabi-size   005_HSI_Measurement.elf 
+arm-none-eabi-objdump -h -S  005_HSI_Measurement.elf  > "005_HSI_Measurement.list"
+   text	   data	    bss	    dec	    hex	filename
+    792	      8	   1568	   2368	    940	005_HSI_Measurement.elf
+Finished building: default.size.stdout
+ 
+Finished building: 005_HSI_Measurement.list
+ 
+19:02:25 **** Incremental Build of configuration Debug for project 005_HSI_Measurement ****
+make -j8 all 
+arm-none-eabi-size   005_HSI_Measurement.elf 
+   text	   data	    bss	    dec	    hex	filename
+    792	      8	   1568	   2368	    940	005_HSI_Measurement.elf
+Finished building: default.size.stdout
+ 
+19:19:35 **** Incremental Build of configuration Debug for project 005_HSI_Measurement ****
+make -j8 all 
+arm-none-eabi-size   005_HSI_Measurement.elf 
+   text	   data	    bss	    dec	    hex	filename
+    792	      8	   1568	   2368	    940	005_HSI_Measurement.elf
+Finished building: default.size.stdout
+ 
+20:01:18 **** Build of configuration Debug for project 007_GPIO ****
+make -j8 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32l4r5zitx.d" -MT"Startup/startup_stm32l4r5zitx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32l4r5zitx.o" "../Startup/startup_stm32l4r5zitx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32L4R5ZITx -DSTM32L4PLUS -DNUCLEO_L4R5ZI -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32L4R5ZITx -DSTM32L4PLUS -DNUCLEO_L4R5ZI -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32L4R5ZITx -DSTM32L4PLUS -DNUCLEO_L4R5ZI -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -o "007_GPIO.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\fcvaz\Dev\mastering_mcu\fundamentals\007_GPIO\STM32L4R5ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="007_GPIO.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 007_GPIO.elf
+ 
+arm-none-eabi-size   007_GPIO.elf 
+arm-none-eabi-objdump -h -S  007_GPIO.elf  > "007_GPIO.list"
+   text	   data	    bss	    dec	    hex	filename
+    804	      8	   1568	   2380	    94c	007_GPIO.elf
+Finished building: default.size.stdout
+ 
+Finished building: 007_GPIO.list
+ 
+20:01:38 **** Incremental Build of configuration Debug for project 007_GPIO ****
+make -j8 all 
+arm-none-eabi-size   007_GPIO.elf 
+   text	   data	    bss	    dec	    hex	filename
+    804	      8	   1568	   2380	    94c	007_GPIO.elf
+Finished building: default.size.stdout
+ 
+20:06:30 **** Incremental Build of configuration Debug for project 007_GPIO ****
+make -j8 all 
+arm-none-eabi-size   007_GPIO.elf 
+   text	   data	    bss	    dec	    hex	filename
+    804	      8	   1568	   2380	    94c	007_GPIO.elf
+Finished building: default.size.stdout
+ 
+20:07:52 **** Incremental Build of configuration Debug for project 007_GPIO ****
+make -j8 all 
+arm-none-eabi-size   007_GPIO.elf 
+   text	   data	    bss	    dec	    hex	filename
+    804	      8	   1568	   2380	    94c	007_GPIO.elf
+Finished building: default.size.stdout
  
