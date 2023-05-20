@@ -1,227 +1,140 @@
-17:45:01 **** Incremental Build of configuration Debug for project 005_HSI_Measurement ****
-make -j8 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32L4R5ZITx -DSTM32L4PLUS -DNUCLEO_L4R5ZI -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "005_HSI_Measurement.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\fcvaz\Dev\mastering_mcu\fundamentals\005_HSI_Measurement\STM32L4R5ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="005_HSI_Measurement.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 005_HSI_Measurement.elf
+18:50:34 **** Build of configuration Debug for project GPIO_EXTI ****
+make -j20 all 
+arm-none-eabi-gcc "C:/Users/fcvaz/dev/mastering_mcu/fundamentals/GPIO_EXTI/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -c -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Example/User/main.d" -MT"Example/User/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Example/User/main.o"
+arm-none-eabi-gcc "C:/Users/fcvaz/dev/mastering_mcu/fundamentals/GPIO_EXTI/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -c -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Example/User/stm32f4xx_it.d" -MT"Example/User/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Example/User/stm32f4xx_it.o"
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Example/SW4STM32/startup_stm32f469xx.d" -MT"Example/SW4STM32/startup_stm32f469xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Example/SW4STM32/startup_stm32f469xx.o" "C:/Users/fcvaz/dev/mastering_mcu/fundamentals/GPIO_EXTI/SW4STM32/startup_stm32f469xx.s"
+arm-none-eabi-gcc "C:/Users/fcvaz/dev/mastering_mcu/fundamentals/GPIO_EXTI/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -c -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal.d" -MT"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal.o"
+arm-none-eabi-gcc "C:/Users/fcvaz/dev/mastering_mcu/fundamentals/GPIO_EXTI/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -c -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_cortex.d" -MT"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_cortex.o"
+arm-none-eabi-gcc "C:/Users/fcvaz/dev/mastering_mcu/fundamentals/GPIO_EXTI/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -c -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_dma.d" -MT"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_dma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_dma.o"
+arm-none-eabi-gcc "C:/Users/fcvaz/dev/mastering_mcu/fundamentals/GPIO_EXTI/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -c -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_dma_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_dma_ex.o"
+arm-none-eabi-gcc "C:/Users/fcvaz/dev/mastering_mcu/fundamentals/GPIO_EXTI/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -c -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_gpio.d" -MT"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_gpio.o"
+arm-none-eabi-gcc "C:/Users/fcvaz/dev/mastering_mcu/fundamentals/GPIO_EXTI/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c" -mcpu=cortex-m4 -std=gnu11 -g3 -c -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_i2c.d" -MT"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_i2c.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_i2c.o"
+arm-none-eabi-gcc "C:/Users/fcvaz/dev/mastering_mcu/fundamentals/GPIO_EXTI/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -c -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_pwr.d" -MT"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_pwr.o"
+arm-none-eabi-gcc "C:/Users/fcvaz/dev/mastering_mcu/fundamentals/GPIO_EXTI/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -c -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_pwr_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "C:/Users/fcvaz/dev/mastering_mcu/fundamentals/GPIO_EXTI/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -c -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_rcc.d" -MT"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_rcc.o"
+arm-none-eabi-gcc "C:/Users/fcvaz/dev/mastering_mcu/fundamentals/GPIO_EXTI/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -c -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_rcc_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "C:/Users/fcvaz/dev/mastering_mcu/fundamentals/GPIO_EXTI/Src/system_stm32f4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -c -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/CMSIS/system_stm32f4xx.d" -MT"Drivers/CMSIS/system_stm32f4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/CMSIS/system_stm32f4xx.o"
+arm-none-eabi-gcc "C:/Users/fcvaz/dev/mastering_mcu/fundamentals/GPIO_EXTI/Drivers/BSP/STM32469I-Discovery/stm32469i_discovery.c" -mcpu=cortex-m4 -std=gnu11 -g3 -c -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/BSP/STM32469I-Discovery/stm32469i_discovery.d" -MT"Drivers/BSP/STM32469I-Discovery/stm32469i_discovery.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/BSP/STM32469I-Discovery/stm32469i_discovery.o"
+C:/Users/fcvaz/dev/mastering_mcu/fundamentals/GPIO_EXTI/Src/main.c:21:10: fatal error: main.h: No such file or directory
+   21 | #include "main.h"
+      |          ^~~~~~~~
+compilation terminated.
+C:/Users/fcvaz/dev/mastering_mcu/fundamentals/GPIO_EXTI/Src/stm32f4xx_it.c:22:10: fatal error: main.h: No such file or directory
+   22 | #include "main.h"
+      |          ^~~~~~~~
+compilation terminated.
+make: *** [Example/User/subdir.mk:22: Example/User/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [Example/User/subdir.mk:24: Example/User/stm32f4xx_it.o] Error 1
+C:/Users/fcvaz/dev/mastering_mcu/fundamentals/GPIO_EXTI/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c:36:10: fatal error: stm32f4xx_hal.h: No such file or directory
+   36 | #include "stm32f4xx_hal.h"
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+Error: Cannot find the specified linker script. Check the linker settings in the build configuration.
+C:/Users/fcvaz/dev/mastering_mcu/fundamentals/GPIO_EXTI/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c:81:10: fatal error: stm32f4xx_hal.h: No such file or directory
+   81 | #include "stm32f4xx_hal.h"
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+C:/Users/fcvaz/dev/mastering_mcu/fundamentals/GPIO_EXTI/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c:97:10: fatal error: stm32f4xx_hal.h: No such file or directory
+   97 | #include "stm32f4xx_hal.h"
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Drivers/STM32F4xx_HAL_Driver/subdir.mk:46: Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal.o] Error 1
+make: *** [Drivers/STM32F4xx_HAL_Driver/subdir.mk:48: Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_cortex.o] Error 1
+make: *** [Drivers/STM32F4xx_HAL_Driver/subdir.mk:50: Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_dma.o] Error 1
+C:/Users/fcvaz/dev/mastering_mcu/fundamentals/GPIO_EXTI/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c:39:10: fatal error: stm32f4xx_hal.h: No such file or directory
+   39 | #include "stm32f4xx_hal.h"
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+C:/Users/fcvaz/dev/mastering_mcu/fundamentals/GPIO_EXTI/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c:108:10: fatal error: stm32f4xx_hal.h: No such file or directory
+  108 | #include "stm32f4xx_hal.h"
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Drivers/STM32F4xx_HAL_Driver/subdir.mk:52: Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_dma_ex.o] Error 1
+C:/Users/fcvaz/dev/mastering_mcu/fundamentals/GPIO_EXTI/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c:24:10: fatal error: stm32f4xx_hal.h: No such file or directory
+   24 | #include "stm32f4xx_hal.h"
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [makefile:97: fail-specified-linker-script-missing] Error 2
+C:/Users/fcvaz/dev/mastering_mcu/fundamentals/GPIO_EXTI/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c:301:10: fatal error: stm32f4xx_hal.h: No such file or directory
+  301 | #include "stm32f4xx_hal.h"
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Drivers/STM32F4xx_HAL_Driver/subdir.mk:54: Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_gpio.o] Error 1
+make: *** [Drivers/STM32F4xx_HAL_Driver/subdir.mk:58: Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_pwr.o] Error 1
+make: *** [Drivers/STM32F4xx_HAL_Driver/subdir.mk:56: Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_i2c.o] Error 1
+C:/Users/fcvaz/dev/mastering_mcu/fundamentals/GPIO_EXTI/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c:23:10: fatal error: stm32f4xx_hal.h: No such file or directory
+   23 | #include "stm32f4xx_hal.h"
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Drivers/STM32F4xx_HAL_Driver/subdir.mk:60: Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_pwr_ex.o] Error 1
+C:/Users/fcvaz/dev/mastering_mcu/fundamentals/GPIO_EXTI/Src/system_stm32f4xx.c:48:10: fatal error: stm32f4xx.h: No such file or directory
+   48 | #include "stm32f4xx.h"
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+C:/Users/fcvaz/dev/mastering_mcu/fundamentals/GPIO_EXTI/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c:67:10: fatal error: stm32f4xx_hal.h: No such file or directory
+   67 | #include "stm32f4xx_hal.h"
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+In file included from C:/Users/fcvaz/dev/mastering_mcu/fundamentals/GPIO_EXTI/Drivers/BSP/STM32469I-Discovery/stm32469i_discovery.c:23:
+C:/Users/fcvaz/dev/mastering_mcu/fundamentals/GPIO_EXTI/Drivers/BSP/STM32469I-Discovery/stm32469i_discovery.h:36:10: fatal error: stm32f4xx_hal.h: No such file or directory
+   36 | #include "stm32f4xx_hal.h"
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+C:/Users/fcvaz/dev/mastering_mcu/fundamentals/GPIO_EXTI/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c:23:10: fatal error: stm32f4xx_hal.h: No such file or directory
+   23 | #include "stm32f4xx_hal.h"
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Drivers/CMSIS/subdir.mk:19: Drivers/CMSIS/system_stm32f4xx.o] Error 1
+make: *** [Drivers/STM32F4xx_HAL_Driver/subdir.mk:62: Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_rcc.o] Error 1
+make: *** [Drivers/BSP/STM32469I-Discovery/subdir.mk:19: Drivers/BSP/STM32469I-Discovery/stm32469i_discovery.o] Error 1
+make: *** [Drivers/STM32F4xx_HAL_Driver/subdir.mk:64: Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_rcc_ex.o] Error 1
+"make -j20 all" terminated with exit code 2. Build might be incomplete.
+18:56:41 **** Build of configuration Debug for project 000_Sand_Box_F4 ****
+make -j20 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f469nihx.d" -MT"Startup/startup_stm32f469nihx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f469nihx.o" "../Startup/startup_stm32f469nihx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F469NIHx -DSTM32F4 -DSTM32F469I_DISCO -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F469NIHx -DSTM32F4 -DSTM32F469I_DISCO -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F469NIHx -DSTM32F4 -DSTM32F469I_DISCO -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+../Src/main.c:22:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+   22 |   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |    ^~~~~~~
+arm-none-eabi-gcc -o "000_Sand_Box_F4.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\fcvaz\dev\mastering_mcu\fundamentals\000_Sand_Box_F4\STM32F469NIHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="000_Sand_Box_F4.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 000_Sand_Box_F4.elf
  
-arm-none-eabi-size   005_HSI_Measurement.elf 
-arm-none-eabi-objdump -h -S  005_HSI_Measurement.elf  > "005_HSI_Measurement.list"
+arm-none-eabi-size   000_Sand_Box_F4.elf 
+arm-none-eabi-objdump -h -S  000_Sand_Box_F4.elf  > "000_Sand_Box_F4.list"
    text	   data	    bss	    dec	    hex	filename
-    784	      8	   1568	   2360	    938	005_HSI_Measurement.elf
+    684	      8	   1568	   2260	    8d4	000_Sand_Box_F4.elf
 Finished building: default.size.stdout
  
-Finished building: 005_HSI_Measurement.list
+Finished building: 000_Sand_Box_F4.list
  
-17:45:07 **** Incremental Build of configuration Debug for project 005_HSI_Measurement ****
-make -j8 all 
-arm-none-eabi-size   005_HSI_Measurement.elf 
+18:56:59 **** Incremental Build of configuration Debug for project 000_Sand_Box_F4 ****
+make -j20 all 
+arm-none-eabi-size   000_Sand_Box_F4.elf 
    text	   data	    bss	    dec	    hex	filename
-    784	      8	   1568	   2360	    938	005_HSI_Measurement.elf
+    684	      8	   1568	   2260	    8d4	000_Sand_Box_F4.elf
 Finished building: default.size.stdout
  
-17:56:56 **** Incremental Build of configuration Debug for project 005_HSI_Measurement ****
-make -j8 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32L4R5ZITx -DSTM32L4PLUS -DNUCLEO_L4R5ZI -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "005_HSI_Measurement.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\fcvaz\Dev\mastering_mcu\fundamentals\005_HSI_Measurement\STM32L4R5ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="005_HSI_Measurement.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 005_HSI_Measurement.elf
- 
-arm-none-eabi-size   005_HSI_Measurement.elf 
-arm-none-eabi-objdump -h -S  005_HSI_Measurement.elf  > "005_HSI_Measurement.list"
+18:57:52 **** Incremental Build of configuration Debug for project 000_Sand_Box_F4 ****
+make -j20 all 
+arm-none-eabi-size   000_Sand_Box_F4.elf 
    text	   data	    bss	    dec	    hex	filename
-    784	      8	   1568	   2360	    938	005_HSI_Measurement.elf
+    684	      8	   1568	   2260	    8d4	000_Sand_Box_F4.elf
 Finished building: default.size.stdout
  
-Finished building: 005_HSI_Measurement.list
+19:00:27 **** Incremental Build of configuration Debug for project 000_Sand_Box_F4 ****
+make -j20 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F469NIHx -DSTM32F4 -DSTM32F469I_DISCO -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "000_Sand_Box_F4.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\fcvaz\dev\mastering_mcu\fundamentals\000_Sand_Box_F4\STM32F469NIHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="000_Sand_Box_F4.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 000_Sand_Box_F4.elf
  
-18:00:14 **** Incremental Build of configuration Debug for project 005_HSI_Measurement ****
-make -j8 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32L4R5ZITx -DSTM32L4PLUS -DNUCLEO_L4R5ZI -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "005_HSI_Measurement.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\fcvaz\Dev\mastering_mcu\fundamentals\005_HSI_Measurement\STM32L4R5ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="005_HSI_Measurement.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 005_HSI_Measurement.elf
- 
-arm-none-eabi-size   005_HSI_Measurement.elf 
-arm-none-eabi-objdump -h -S  005_HSI_Measurement.elf  > "005_HSI_Measurement.list"
+arm-none-eabi-size   000_Sand_Box_F4.elf 
+arm-none-eabi-objdump -h -S  000_Sand_Box_F4.elf  > "000_Sand_Box_F4.list"
    text	   data	    bss	    dec	    hex	filename
-    784	      8	   1568	   2360	    938	005_HSI_Measurement.elf
+    744	      8	   1568	   2320	    910	000_Sand_Box_F4.elf
 Finished building: default.size.stdout
  
-Finished building: 005_HSI_Measurement.list
- 
-18:04:45 **** Incremental Build of configuration Debug for project 005_HSI_Measurement ****
-make -j8 all 
-arm-none-eabi-size   005_HSI_Measurement.elf 
-   text	   data	    bss	    dec	    hex	filename
-    784	      8	   1568	   2360	    938	005_HSI_Measurement.elf
-Finished building: default.size.stdout
- 
-18:20:47 **** Incremental Build of configuration Debug for project 005_HSI_Measurement ****
-make -j8 all 
-arm-none-eabi-size   005_HSI_Measurement.elf 
-   text	   data	    bss	    dec	    hex	filename
-    784	      8	   1568	   2360	    938	005_HSI_Measurement.elf
-Finished building: default.size.stdout
- 
-18:36:22 **** Incremental Build of configuration Debug for project 005_HSI_Measurement ****
-make -j8 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32L4R5ZITx -DSTM32L4PLUS -DNUCLEO_L4R5ZI -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "005_HSI_Measurement.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\fcvaz\Dev\mastering_mcu\fundamentals\005_HSI_Measurement\STM32L4R5ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="005_HSI_Measurement.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 005_HSI_Measurement.elf
- 
-arm-none-eabi-size   005_HSI_Measurement.elf 
-arm-none-eabi-objdump -h -S  005_HSI_Measurement.elf  > "005_HSI_Measurement.list"
-   text	   data	    bss	    dec	    hex	filename
-    796	      8	   1568	   2372	    944	005_HSI_Measurement.elf
-Finished building: default.size.stdout
- 
-Finished building: 005_HSI_Measurement.list
- 
-18:40:42 **** Incremental Build of configuration Debug for project 005_HSI_Measurement ****
-make -j8 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32L4R5ZITx -DSTM32L4PLUS -DNUCLEO_L4R5ZI -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "005_HSI_Measurement.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\fcvaz\Dev\mastering_mcu\fundamentals\005_HSI_Measurement\STM32L4R5ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="005_HSI_Measurement.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 005_HSI_Measurement.elf
- 
-arm-none-eabi-size   005_HSI_Measurement.elf 
-arm-none-eabi-objdump -h -S  005_HSI_Measurement.elf  > "005_HSI_Measurement.list"
-   text	   data	    bss	    dec	    hex	filename
-    796	      8	   1568	   2372	    944	005_HSI_Measurement.elf
-Finished building: default.size.stdout
- 
-Finished building: 005_HSI_Measurement.list
- 
-18:42:02 **** Incremental Build of configuration Debug for project 005_HSI_Measurement ****
-make -j8 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32L4R5ZITx -DSTM32L4PLUS -DNUCLEO_L4R5ZI -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "005_HSI_Measurement.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\fcvaz\Dev\mastering_mcu\fundamentals\005_HSI_Measurement\STM32L4R5ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="005_HSI_Measurement.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 005_HSI_Measurement.elf
- 
-arm-none-eabi-size   005_HSI_Measurement.elf 
-arm-none-eabi-objdump -h -S  005_HSI_Measurement.elf  > "005_HSI_Measurement.list"
-   text	   data	    bss	    dec	    hex	filename
-    784	      8	   1568	   2360	    938	005_HSI_Measurement.elf
-Finished building: default.size.stdout
- 
-Finished building: 005_HSI_Measurement.list
- 
-18:45:15 **** Incremental Build of configuration Debug for project 005_HSI_Measurement ****
-make -j8 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32L4R5ZITx -DSTM32L4PLUS -DNUCLEO_L4R5ZI -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "005_HSI_Measurement.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\fcvaz\Dev\mastering_mcu\fundamentals\005_HSI_Measurement\STM32L4R5ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="005_HSI_Measurement.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 005_HSI_Measurement.elf
- 
-arm-none-eabi-size   005_HSI_Measurement.elf 
-arm-none-eabi-objdump -h -S  005_HSI_Measurement.elf  > "005_HSI_Measurement.list"
-   text	   data	    bss	    dec	    hex	filename
-    796	      8	   1568	   2372	    944	005_HSI_Measurement.elf
-Finished building: default.size.stdout
- 
-Finished building: 005_HSI_Measurement.list
- 
-18:50:47 **** Incremental Build of configuration Debug for project 005_HSI_Measurement ****
-make -j8 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32L4R5ZITx -DSTM32L4PLUS -DNUCLEO_L4R5ZI -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "005_HSI_Measurement.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\fcvaz\Dev\mastering_mcu\fundamentals\005_HSI_Measurement\STM32L4R5ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="005_HSI_Measurement.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 005_HSI_Measurement.elf
- 
-arm-none-eabi-size   005_HSI_Measurement.elf 
-arm-none-eabi-objdump -h -S  005_HSI_Measurement.elf  > "005_HSI_Measurement.list"
-   text	   data	    bss	    dec	    hex	filename
-    792	      8	   1568	   2368	    940	005_HSI_Measurement.elf
-Finished building: default.size.stdout
- 
-Finished building: 005_HSI_Measurement.list
- 
-18:56:08 **** Incremental Build of configuration Debug for project 005_HSI_Measurement ****
-make -j8 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32L4R5ZITx -DSTM32L4PLUS -DNUCLEO_L4R5ZI -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "005_HSI_Measurement.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\fcvaz\Dev\mastering_mcu\fundamentals\005_HSI_Measurement\STM32L4R5ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="005_HSI_Measurement.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 005_HSI_Measurement.elf
- 
-arm-none-eabi-size   005_HSI_Measurement.elf 
-arm-none-eabi-objdump -h -S  005_HSI_Measurement.elf  > "005_HSI_Measurement.list"
-   text	   data	    bss	    dec	    hex	filename
-    792	      8	   1568	   2368	    940	005_HSI_Measurement.elf
-Finished building: default.size.stdout
- 
-Finished building: 005_HSI_Measurement.list
- 
-19:02:25 **** Incremental Build of configuration Debug for project 005_HSI_Measurement ****
-make -j8 all 
-arm-none-eabi-size   005_HSI_Measurement.elf 
-   text	   data	    bss	    dec	    hex	filename
-    792	      8	   1568	   2368	    940	005_HSI_Measurement.elf
-Finished building: default.size.stdout
- 
-19:19:35 **** Incremental Build of configuration Debug for project 005_HSI_Measurement ****
-make -j8 all 
-arm-none-eabi-size   005_HSI_Measurement.elf 
-   text	   data	    bss	    dec	    hex	filename
-    792	      8	   1568	   2368	    940	005_HSI_Measurement.elf
-Finished building: default.size.stdout
- 
-20:01:18 **** Build of configuration Debug for project 007_GPIO ****
-make -j8 all 
-arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32l4r5zitx.d" -MT"Startup/startup_stm32l4r5zitx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32l4r5zitx.o" "../Startup/startup_stm32l4r5zitx.s"
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32L4R5ZITx -DSTM32L4PLUS -DNUCLEO_L4R5ZI -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32L4R5ZITx -DSTM32L4PLUS -DNUCLEO_L4R5ZI -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
-arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32L4R5ZITx -DSTM32L4PLUS -DNUCLEO_L4R5ZI -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
-arm-none-eabi-gcc -o "007_GPIO.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\fcvaz\Dev\mastering_mcu\fundamentals\007_GPIO\STM32L4R5ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="007_GPIO.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 007_GPIO.elf
- 
-arm-none-eabi-size   007_GPIO.elf 
-arm-none-eabi-objdump -h -S  007_GPIO.elf  > "007_GPIO.list"
-   text	   data	    bss	    dec	    hex	filename
-    804	      8	   1568	   2380	    94c	007_GPIO.elf
-Finished building: default.size.stdout
- 
-Finished building: 007_GPIO.list
- 
-20:01:38 **** Incremental Build of configuration Debug for project 007_GPIO ****
-make -j8 all 
-arm-none-eabi-size   007_GPIO.elf 
-   text	   data	    bss	    dec	    hex	filename
-    804	      8	   1568	   2380	    94c	007_GPIO.elf
-Finished building: default.size.stdout
- 
-20:06:30 **** Incremental Build of configuration Debug for project 007_GPIO ****
-make -j8 all 
-arm-none-eabi-size   007_GPIO.elf 
-   text	   data	    bss	    dec	    hex	filename
-    804	      8	   1568	   2380	    94c	007_GPIO.elf
-Finished building: default.size.stdout
- 
-20:07:52 **** Incremental Build of configuration Debug for project 007_GPIO ****
-make -j8 all 
-arm-none-eabi-size   007_GPIO.elf 
-   text	   data	    bss	    dec	    hex	filename
-    804	      8	   1568	   2380	    94c	007_GPIO.elf
-Finished building: default.size.stdout
- 
-10:23:29 **** Incremental Build of configuration Debug for project 007_GPIO ****
-make -j8 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32L4R5ZITx -DSTM32L4PLUS -DNUCLEO_L4R5ZI -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "007_GPIO.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\fcvaz\Dev\mastering_mcu\fundamentals\007_GPIO\STM32L4R5ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="007_GPIO.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 007_GPIO.elf
- 
-arm-none-eabi-size   007_GPIO.elf 
-arm-none-eabi-objdump -h -S  007_GPIO.elf  > "007_GPIO.list"
-   text	   data	    bss	    dec	    hex	filename
-    804	      8	   1568	   2380	    94c	007_GPIO.elf
-Finished building: default.size.stdout
- 
-Finished building: 007_GPIO.list
- 
-10:25:56 **** Incremental Build of configuration Debug for project 007_GPIO ****
-make -j8 all 
-arm-none-eabi-size   007_GPIO.elf 
-   text	   data	    bss	    dec	    hex	filename
-    804	      8	   1568	   2380	    94c	007_GPIO.elf
-Finished building: default.size.stdout
- 
-12:02:51 **** Incremental Build of configuration Debug for project 007_GPIO ****
-make -j8 all 
-arm-none-eabi-size   007_GPIO.elf 
-   text	   data	    bss	    dec	    hex	filename
-    804	      8	   1568	   2380	    94c	007_GPIO.elf
-Finished building: default.size.stdout
+Finished building: 000_Sand_Box_F4.list
  
