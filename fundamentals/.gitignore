@@ -1,6 +1,6 @@
 /.metadata/
-Debug/
-Drivers/
-FATS/
-Middlewares/
-USB_HOST/
+**/Debug/
+**/Drivers/
+**/FATS/
+**/Middlewares/
+**/USB_HOST/
