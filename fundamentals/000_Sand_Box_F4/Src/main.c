@@ -18,7 +18,6 @@
 
 #include <stdint.h>
 
-
 struct Point
 {
 	int32_t m_x;
@@ -55,6 +54,8 @@ int main(void)
 	int result = 0;
 
 	add_by_pointer(x, y, &result);
+
+
 
 //	int a = 10;
 //	int b = 20;

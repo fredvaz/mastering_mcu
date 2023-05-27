@@ -1,140 +1,166 @@
-18:50:34 **** Build of configuration Debug for project GPIO_EXTI ****
+16:21:13 **** Incremental Build of configuration Debug for project LEDBlinking ****
 make -j20 all 
-arm-none-eabi-gcc "C:/Users/fcvaz/dev/mastering_mcu/fundamentals/GPIO_EXTI/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -c -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Example/User/main.d" -MT"Example/User/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Example/User/main.o"
-arm-none-eabi-gcc "C:/Users/fcvaz/dev/mastering_mcu/fundamentals/GPIO_EXTI/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -c -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Example/User/stm32f4xx_it.d" -MT"Example/User/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Example/User/stm32f4xx_it.o"
-arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Example/SW4STM32/startup_stm32f469xx.d" -MT"Example/SW4STM32/startup_stm32f469xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Example/SW4STM32/startup_stm32f469xx.o" "C:/Users/fcvaz/dev/mastering_mcu/fundamentals/GPIO_EXTI/SW4STM32/startup_stm32f469xx.s"
-arm-none-eabi-gcc "C:/Users/fcvaz/dev/mastering_mcu/fundamentals/GPIO_EXTI/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -c -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal.d" -MT"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal.o"
-arm-none-eabi-gcc "C:/Users/fcvaz/dev/mastering_mcu/fundamentals/GPIO_EXTI/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -c -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_cortex.d" -MT"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_cortex.o"
-arm-none-eabi-gcc "C:/Users/fcvaz/dev/mastering_mcu/fundamentals/GPIO_EXTI/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -c -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_dma.d" -MT"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_dma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_dma.o"
-arm-none-eabi-gcc "C:/Users/fcvaz/dev/mastering_mcu/fundamentals/GPIO_EXTI/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -c -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_dma_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_dma_ex.o"
-arm-none-eabi-gcc "C:/Users/fcvaz/dev/mastering_mcu/fundamentals/GPIO_EXTI/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -c -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_gpio.d" -MT"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_gpio.o"
-arm-none-eabi-gcc "C:/Users/fcvaz/dev/mastering_mcu/fundamentals/GPIO_EXTI/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c" -mcpu=cortex-m4 -std=gnu11 -g3 -c -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_i2c.d" -MT"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_i2c.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_i2c.o"
-arm-none-eabi-gcc "C:/Users/fcvaz/dev/mastering_mcu/fundamentals/GPIO_EXTI/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -c -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_pwr.d" -MT"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_pwr.o"
-arm-none-eabi-gcc "C:/Users/fcvaz/dev/mastering_mcu/fundamentals/GPIO_EXTI/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -c -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_pwr_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_pwr_ex.o"
-arm-none-eabi-gcc "C:/Users/fcvaz/dev/mastering_mcu/fundamentals/GPIO_EXTI/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -c -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_rcc.d" -MT"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_rcc.o"
-arm-none-eabi-gcc "C:/Users/fcvaz/dev/mastering_mcu/fundamentals/GPIO_EXTI/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -c -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_rcc_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_rcc_ex.o"
-arm-none-eabi-gcc "C:/Users/fcvaz/dev/mastering_mcu/fundamentals/GPIO_EXTI/Src/system_stm32f4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -c -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/CMSIS/system_stm32f4xx.d" -MT"Drivers/CMSIS/system_stm32f4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/CMSIS/system_stm32f4xx.o"
-arm-none-eabi-gcc "C:/Users/fcvaz/dev/mastering_mcu/fundamentals/GPIO_EXTI/Drivers/BSP/STM32469I-Discovery/stm32469i_discovery.c" -mcpu=cortex-m4 -std=gnu11 -g3 -c -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/BSP/STM32469I-Discovery/stm32469i_discovery.d" -MT"Drivers/BSP/STM32469I-Discovery/stm32469i_discovery.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/BSP/STM32469I-Discovery/stm32469i_discovery.o"
-C:/Users/fcvaz/dev/mastering_mcu/fundamentals/GPIO_EXTI/Src/main.c:21:10: fatal error: main.h: No such file or directory
-   21 | #include "main.h"
-      |          ^~~~~~~~
-compilation terminated.
-C:/Users/fcvaz/dev/mastering_mcu/fundamentals/GPIO_EXTI/Src/stm32f4xx_it.c:22:10: fatal error: main.h: No such file or directory
-   22 | #include "main.h"
-      |          ^~~~~~~~
-compilation terminated.
-make: *** [Example/User/subdir.mk:22: Example/User/main.o] Error 1
-make: *** Waiting for unfinished jobs....
-make: *** [Example/User/subdir.mk:24: Example/User/stm32f4xx_it.o] Error 1
-C:/Users/fcvaz/dev/mastering_mcu/fundamentals/GPIO_EXTI/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c:36:10: fatal error: stm32f4xx_hal.h: No such file or directory
-   36 | #include "stm32f4xx_hal.h"
-      |          ^~~~~~~~~~~~~~~~~
-compilation terminated.
-Error: Cannot find the specified linker script. Check the linker settings in the build configuration.
-C:/Users/fcvaz/dev/mastering_mcu/fundamentals/GPIO_EXTI/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c:81:10: fatal error: stm32f4xx_hal.h: No such file or directory
-   81 | #include "stm32f4xx_hal.h"
-      |          ^~~~~~~~~~~~~~~~~
-compilation terminated.
-C:/Users/fcvaz/dev/mastering_mcu/fundamentals/GPIO_EXTI/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c:97:10: fatal error: stm32f4xx_hal.h: No such file or directory
-   97 | #include "stm32f4xx_hal.h"
-      |          ^~~~~~~~~~~~~~~~~
-compilation terminated.
-make: *** [Drivers/STM32F4xx_HAL_Driver/subdir.mk:46: Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal.o] Error 1
-make: *** [Drivers/STM32F4xx_HAL_Driver/subdir.mk:48: Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_cortex.o] Error 1
-make: *** [Drivers/STM32F4xx_HAL_Driver/subdir.mk:50: Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_dma.o] Error 1
-C:/Users/fcvaz/dev/mastering_mcu/fundamentals/GPIO_EXTI/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c:39:10: fatal error: stm32f4xx_hal.h: No such file or directory
-   39 | #include "stm32f4xx_hal.h"
-      |          ^~~~~~~~~~~~~~~~~
-compilation terminated.
-C:/Users/fcvaz/dev/mastering_mcu/fundamentals/GPIO_EXTI/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c:108:10: fatal error: stm32f4xx_hal.h: No such file or directory
-  108 | #include "stm32f4xx_hal.h"
-      |          ^~~~~~~~~~~~~~~~~
-compilation terminated.
-make: *** [Drivers/STM32F4xx_HAL_Driver/subdir.mk:52: Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_dma_ex.o] Error 1
-C:/Users/fcvaz/dev/mastering_mcu/fundamentals/GPIO_EXTI/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c:24:10: fatal error: stm32f4xx_hal.h: No such file or directory
-   24 | #include "stm32f4xx_hal.h"
-      |          ^~~~~~~~~~~~~~~~~
-compilation terminated.
-make: *** [makefile:97: fail-specified-linker-script-missing] Error 2
-C:/Users/fcvaz/dev/mastering_mcu/fundamentals/GPIO_EXTI/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c:301:10: fatal error: stm32f4xx_hal.h: No such file or directory
-  301 | #include "stm32f4xx_hal.h"
-      |          ^~~~~~~~~~~~~~~~~
-compilation terminated.
-make: *** [Drivers/STM32F4xx_HAL_Driver/subdir.mk:54: Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_gpio.o] Error 1
-make: *** [Drivers/STM32F4xx_HAL_Driver/subdir.mk:58: Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_pwr.o] Error 1
-make: *** [Drivers/STM32F4xx_HAL_Driver/subdir.mk:56: Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_i2c.o] Error 1
-C:/Users/fcvaz/dev/mastering_mcu/fundamentals/GPIO_EXTI/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c:23:10: fatal error: stm32f4xx_hal.h: No such file or directory
-   23 | #include "stm32f4xx_hal.h"
-      |          ^~~~~~~~~~~~~~~~~
-compilation terminated.
-make: *** [Drivers/STM32F4xx_HAL_Driver/subdir.mk:60: Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_pwr_ex.o] Error 1
-C:/Users/fcvaz/dev/mastering_mcu/fundamentals/GPIO_EXTI/Src/system_stm32f4xx.c:48:10: fatal error: stm32f4xx.h: No such file or directory
-   48 | #include "stm32f4xx.h"
-      |          ^~~~~~~~~~~~~
-compilation terminated.
-C:/Users/fcvaz/dev/mastering_mcu/fundamentals/GPIO_EXTI/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c:67:10: fatal error: stm32f4xx_hal.h: No such file or directory
-   67 | #include "stm32f4xx_hal.h"
-      |          ^~~~~~~~~~~~~~~~~
-compilation terminated.
-In file included from C:/Users/fcvaz/dev/mastering_mcu/fundamentals/GPIO_EXTI/Drivers/BSP/STM32469I-Discovery/stm32469i_discovery.c:23:
-C:/Users/fcvaz/dev/mastering_mcu/fundamentals/GPIO_EXTI/Drivers/BSP/STM32469I-Discovery/stm32469i_discovery.h:36:10: fatal error: stm32f4xx_hal.h: No such file or directory
-   36 | #include "stm32f4xx_hal.h"
-      |          ^~~~~~~~~~~~~~~~~
-compilation terminated.
-C:/Users/fcvaz/dev/mastering_mcu/fundamentals/GPIO_EXTI/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c:23:10: fatal error: stm32f4xx_hal.h: No such file or directory
-   23 | #include "stm32f4xx_hal.h"
-      |          ^~~~~~~~~~~~~~~~~
-compilation terminated.
-make: *** [Drivers/CMSIS/subdir.mk:19: Drivers/CMSIS/system_stm32f4xx.o] Error 1
-make: *** [Drivers/STM32F4xx_HAL_Driver/subdir.mk:62: Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_rcc.o] Error 1
-make: *** [Drivers/BSP/STM32469I-Discovery/subdir.mk:19: Drivers/BSP/STM32469I-Discovery/stm32469i_discovery.o] Error 1
-make: *** [Drivers/STM32F4xx_HAL_Driver/subdir.mk:64: Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_rcc_ex.o] Error 1
-"make -j20 all" terminated with exit code 2. Build might be incomplete.
-18:56:41 **** Build of configuration Debug for project 000_Sand_Box_F4 ****
-make -j20 all 
-arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f469nihx.d" -MT"Startup/startup_stm32f469nihx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f469nihx.o" "../Startup/startup_stm32f469nihx.s"
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F469NIHx -DSTM32F4 -DSTM32F469I_DISCO -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F469NIHx -DSTM32F4 -DSTM32F469I_DISCO -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
-arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F469NIHx -DSTM32F4 -DSTM32F469I_DISCO -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
-../Src/main.c:22:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
-   22 |   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
-      |    ^~~~~~~
-arm-none-eabi-gcc -o "000_Sand_Box_F4.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\fcvaz\dev\mastering_mcu\fundamentals\000_Sand_Box_F4\STM32F469NIHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="000_Sand_Box_F4.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 000_Sand_Box_F4.elf
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F469xx -c -I../Core/Inc -I../FATFS/Target -I../FATFS/App -I../USB_HOST/App -I../USB_HOST/Target -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Middlewares/Third_Party/FatFs/src -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:804:13: warning: 'MX_FMC_Init' defined but not used [-Wunused-function]
+  804 | static void MX_FMC_Init(void)
+      |             ^~~~~~~~~~~
+../Core/Src/main.c:775:13: warning: 'MX_USART6_UART_Init' defined but not used [-Wunused-function]
+  775 | static void MX_USART6_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:742:13: warning: 'MX_USART3_UART_Init' defined but not used [-Wunused-function]
+  742 | static void MX_USART3_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:696:13: warning: 'MX_TIM1_Init' defined but not used [-Wunused-function]
+  696 | static void MX_TIM1_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:668:13: warning: 'MX_SDIO_SD_Init' defined but not used [-Wunused-function]
+  668 | static void MX_SDIO_SD_Init(void)
+      |             ^~~~~~~~~~~~~~~
+../Core/Src/main.c:618:13: warning: 'MX_SAI1_Init' defined but not used [-Wunused-function]
+  618 | static void MX_SAI1_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:583:13: warning: 'MX_QUADSPI_Init' defined but not used [-Wunused-function]
+  583 | static void MX_QUADSPI_Init(void)
+      |             ^~~~~~~~~~~~~~~
+../Core/Src/main.c:521:13: warning: 'MX_LTDC_Init' defined but not used [-Wunused-function]
+  521 | static void MX_LTDC_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:487:13: warning: 'MX_I2C2_Init' defined but not used [-Wunused-function]
+  487 | static void MX_I2C2_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:453:13: warning: 'MX_I2C1_Init' defined but not used [-Wunused-function]
+  453 | static void MX_I2C1_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:344:13: warning: 'MX_DSIHOST_DSI_Init' defined but not used [-Wunused-function]
+  344 | static void MX_DSIHOST_DSI_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:307:13: warning: 'MX_DMA2D_Init' defined but not used [-Wunused-function]
+  307 | static void MX_DMA2D_Init(void)
+      |             ^~~~~~~~~~~~~
+../Core/Src/main.c:281:13: warning: 'MX_CRC_Init' defined but not used [-Wunused-function]
+  281 | static void MX_CRC_Init(void)
+      |             ^~~~~~~~~~~
+arm-none-eabi-gcc -o "LEDBlinking.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\fcvaz\dev\mastering_mcu\fundamentals\LEDBlinking\STM32F469NIHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LEDBlinking.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LEDBlinking.elf
  
-arm-none-eabi-size   000_Sand_Box_F4.elf 
-arm-none-eabi-objdump -h -S  000_Sand_Box_F4.elf  > "000_Sand_Box_F4.list"
+arm-none-eabi-size   LEDBlinking.elf 
+arm-none-eabi-objdump -h -S  LEDBlinking.elf  > "LEDBlinking.list"
    text	   data	    bss	    dec	    hex	filename
-    684	      8	   1568	   2260	    8d4	000_Sand_Box_F4.elf
+  22620	     24	   2912	  25556	   63d4	LEDBlinking.elf
 Finished building: default.size.stdout
  
-Finished building: 000_Sand_Box_F4.list
+Finished building: LEDBlinking.list
  
-18:56:59 **** Incremental Build of configuration Debug for project 000_Sand_Box_F4 ****
+16:31:18 **** Incremental Build of configuration Debug for project LEDBlinking ****
 make -j20 all 
-arm-none-eabi-size   000_Sand_Box_F4.elf 
+arm-none-eabi-size   LEDBlinking.elf 
    text	   data	    bss	    dec	    hex	filename
-    684	      8	   1568	   2260	    8d4	000_Sand_Box_F4.elf
+  22620	     24	   2912	  25556	   63d4	LEDBlinking.elf
 Finished building: default.size.stdout
  
-18:57:52 **** Incremental Build of configuration Debug for project 000_Sand_Box_F4 ****
+16:33:37 **** Incremental Build of configuration Debug for project LEDBlinking ****
 make -j20 all 
-arm-none-eabi-size   000_Sand_Box_F4.elf 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F469xx -c -I../Core/Inc -I../FATFS/Target -I../FATFS/App -I../USB_HOST/App -I../USB_HOST/Target -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Middlewares/Third_Party/FatFs/src -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:804:13: warning: 'MX_FMC_Init' defined but not used [-Wunused-function]
+  804 | static void MX_FMC_Init(void)
+      |             ^~~~~~~~~~~
+../Core/Src/main.c:775:13: warning: 'MX_USART6_UART_Init' defined but not used [-Wunused-function]
+  775 | static void MX_USART6_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:742:13: warning: 'MX_USART3_UART_Init' defined but not used [-Wunused-function]
+  742 | static void MX_USART3_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:696:13: warning: 'MX_TIM1_Init' defined but not used [-Wunused-function]
+  696 | static void MX_TIM1_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:668:13: warning: 'MX_SDIO_SD_Init' defined but not used [-Wunused-function]
+  668 | static void MX_SDIO_SD_Init(void)
+      |             ^~~~~~~~~~~~~~~
+../Core/Src/main.c:618:13: warning: 'MX_SAI1_Init' defined but not used [-Wunused-function]
+  618 | static void MX_SAI1_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:583:13: warning: 'MX_QUADSPI_Init' defined but not used [-Wunused-function]
+  583 | static void MX_QUADSPI_Init(void)
+      |             ^~~~~~~~~~~~~~~
+../Core/Src/main.c:521:13: warning: 'MX_LTDC_Init' defined but not used [-Wunused-function]
+  521 | static void MX_LTDC_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:487:13: warning: 'MX_I2C2_Init' defined but not used [-Wunused-function]
+  487 | static void MX_I2C2_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:453:13: warning: 'MX_I2C1_Init' defined but not used [-Wunused-function]
+  453 | static void MX_I2C1_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:344:13: warning: 'MX_DSIHOST_DSI_Init' defined but not used [-Wunused-function]
+  344 | static void MX_DSIHOST_DSI_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:307:13: warning: 'MX_DMA2D_Init' defined but not used [-Wunused-function]
+  307 | static void MX_DMA2D_Init(void)
+      |             ^~~~~~~~~~~~~
+../Core/Src/main.c:281:13: warning: 'MX_CRC_Init' defined but not used [-Wunused-function]
+  281 | static void MX_CRC_Init(void)
+      |             ^~~~~~~~~~~
+arm-none-eabi-gcc -o "LEDBlinking.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\fcvaz\dev\mastering_mcu\fundamentals\LEDBlinking\STM32F469NIHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LEDBlinking.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LEDBlinking.elf
+ 
+arm-none-eabi-size   LEDBlinking.elf 
+arm-none-eabi-objdump -h -S  LEDBlinking.elf  > "LEDBlinking.list"
    text	   data	    bss	    dec	    hex	filename
-    684	      8	   1568	   2260	    8d4	000_Sand_Box_F4.elf
+  22620	     24	   2912	  25556	   63d4	LEDBlinking.elf
 Finished building: default.size.stdout
  
-19:00:27 **** Incremental Build of configuration Debug for project 000_Sand_Box_F4 ****
-make -j20 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F469NIHx -DSTM32F4 -DSTM32F469I_DISCO -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "000_Sand_Box_F4.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\fcvaz\dev\mastering_mcu\fundamentals\000_Sand_Box_F4\STM32F469NIHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="000_Sand_Box_F4.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 000_Sand_Box_F4.elf
+Finished building: LEDBlinking.list
  
-arm-none-eabi-size   000_Sand_Box_F4.elf 
-arm-none-eabi-objdump -h -S  000_Sand_Box_F4.elf  > "000_Sand_Box_F4.list"
+16:34:43 **** Incremental Build of configuration Debug for project LEDBlinking ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F469xx -c -I../Core/Inc -I../FATFS/Target -I../FATFS/App -I../USB_HOST/App -I../USB_HOST/Target -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Middlewares/Third_Party/FatFs/src -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:804:13: warning: 'MX_FMC_Init' defined but not used [-Wunused-function]
+  804 | static void MX_FMC_Init(void)
+      |             ^~~~~~~~~~~
+../Core/Src/main.c:775:13: warning: 'MX_USART6_UART_Init' defined but not used [-Wunused-function]
+  775 | static void MX_USART6_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:742:13: warning: 'MX_USART3_UART_Init' defined but not used [-Wunused-function]
+  742 | static void MX_USART3_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:696:13: warning: 'MX_TIM1_Init' defined but not used [-Wunused-function]
+  696 | static void MX_TIM1_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:668:13: warning: 'MX_SDIO_SD_Init' defined but not used [-Wunused-function]
+  668 | static void MX_SDIO_SD_Init(void)
+      |             ^~~~~~~~~~~~~~~
+../Core/Src/main.c:618:13: warning: 'MX_SAI1_Init' defined but not used [-Wunused-function]
+  618 | static void MX_SAI1_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:583:13: warning: 'MX_QUADSPI_Init' defined but not used [-Wunused-function]
+  583 | static void MX_QUADSPI_Init(void)
+      |             ^~~~~~~~~~~~~~~
+../Core/Src/main.c:521:13: warning: 'MX_LTDC_Init' defined but not used [-Wunused-function]
+  521 | static void MX_LTDC_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:487:13: warning: 'MX_I2C2_Init' defined but not used [-Wunused-function]
+  487 | static void MX_I2C2_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:453:13: warning: 'MX_I2C1_Init' defined but not used [-Wunused-function]
+  453 | static void MX_I2C1_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:344:13: warning: 'MX_DSIHOST_DSI_Init' defined but not used [-Wunused-function]
+  344 | static void MX_DSIHOST_DSI_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:307:13: warning: 'MX_DMA2D_Init' defined but not used [-Wunused-function]
+  307 | static void MX_DMA2D_Init(void)
+      |             ^~~~~~~~~~~~~
+../Core/Src/main.c:281:13: warning: 'MX_CRC_Init' defined but not used [-Wunused-function]
+  281 | static void MX_CRC_Init(void)
+      |             ^~~~~~~~~~~
+arm-none-eabi-gcc -o "LEDBlinking.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\fcvaz\dev\mastering_mcu\fundamentals\LEDBlinking\STM32F469NIHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LEDBlinking.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LEDBlinking.elf
+ 
+arm-none-eabi-size   LEDBlinking.elf 
+arm-none-eabi-objdump -h -S  LEDBlinking.elf  > "LEDBlinking.list"
    text	   data	    bss	    dec	    hex	filename
-    744	      8	   1568	   2320	    910	000_Sand_Box_F4.elf
+  22620	     24	   2912	  25556	   63d4	LEDBlinking.elf
 Finished building: default.size.stdout
  
-Finished building: 000_Sand_Box_F4.list
+Finished building: LEDBlinking.list
  

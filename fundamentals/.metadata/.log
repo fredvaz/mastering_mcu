@@ -1191,3 +1191,78 @@ java.lang.Exception
 
 !ENTRY org.eclipse.cdt.core 1 0 2023-05-20 18:56:16.336
 !MESSAGE Indexed '000_Sand_Box_F4' (2 sources, 53 headers) in 0.151 sec: 1,947 declarations; 2,830 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.042%)
+!SESSION 2023-05-27 14:41:29.205 -----------------------------------------------
+eclipse.buildId=Version 1.12.1
+java.version=11.0.17
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2023-05-27 14:41:54.742
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://com.genuitec.eclipse.meexplorer/com.genuitec.eclipse.meexplorer.breadcrumb.e4.BreadCrumbContainer
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2023-05-27 14:41:55.438
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-05-27 14:41:55.440
+!MESSAGE Log4j2 initialized with config file C:\Users\fcvaz\dev\mastering_mcu\fundamentals\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-05-27 14:42:03.555
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2023-05-27 14:48:34.703 -----------------------------------------------
+eclipse.buildId=Version 1.12.1
+java.version=11.0.17
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\Users\fcvaz\dev\mastering_mcu\fundamentals
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2023-05-27 14:48:42.822
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://com.genuitec.eclipse.meexplorer/com.genuitec.eclipse.meexplorer.breadcrumb.e4.BreadCrumbContainer
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2023-05-27 14:48:43.727
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-05-27 14:48:43.729
+!MESSAGE Log4j2 initialized with config file C:\Users\fcvaz\dev\mastering_mcu\fundamentals\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-05-27 14:48:52.164
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2023-05-27 15:11:32.922 -----------------------------------------------
+eclipse.buildId=Version 1.12.1
+java.version=11.0.17
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\Users\fcvaz\dev\mastering_mcu\fundamentals
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2023-05-27 15:11:41.367
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://com.genuitec.eclipse.meexplorer/com.genuitec.eclipse.meexplorer.breadcrumb.e4.BreadCrumbContainer
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2023-05-27 15:11:42.513
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-05-27 15:11:42.516
+!MESSAGE Log4j2 initialized with config file C:\Users\fcvaz\dev\mastering_mcu\fundamentals\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-05-27 15:11:54.471
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2023-05-27 15:48:17.947 -----------------------------------------------
+eclipse.buildId=Version 1.12.1
+java.version=11.0.17
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\Users\fcvaz\dev\mastering_mcu\fundamentals
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2023-05-27 15:48:24.456
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://com.genuitec.eclipse.meexplorer/com.genuitec.eclipse.meexplorer.breadcrumb.e4.BreadCrumbContainer
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2023-05-27 15:48:25.114
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-05-27 15:48:25.116
+!MESSAGE Log4j2 initialized with config file C:\Users\fcvaz\dev\mastering_mcu\fundamentals\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-05-27 15:48:33.994
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-05-27 16:00:01.136
+!MESSAGE Indexed 'LEDBlinking' (66 sources, 141 headers) in 4.93 sec: 15,159 declarations; 108,564 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0016%)
