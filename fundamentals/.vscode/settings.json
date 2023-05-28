@@ -23,5 +23,6 @@
     },
     "files.associations": {
         "stdint.h": "c"
-    }
+    },
+    "cmake.sourceDirectory": "C:/Users/fcvaz/dev/mastering_mcu/fundamentals/Template"
 }

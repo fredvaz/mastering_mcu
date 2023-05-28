@@ -66,7 +66,7 @@
                 "--connect",
                 "port=swd",
                 "--download",
-                "${command:cmake.launchTargetPath}",
+                "${command:cmake.launchTargetPath}", // ${command:cmake.launchTargetPath} STM32F469NI-DK-LED LEDBlinking, ${workspaceFolder}/build/Debug/LEDBlinking.elf
                 "-hardRst",
                 "-rst",
                 "--start"
@@ -106,29 +106,6 @@
                 "cwd": "${workspaceFolder}"
             },
             "problemMatcher": []
-        },
-        {
-            "type": "cppbuild",
-            "label": "Build project",
-            "command": "cmake",
-            "args": [
-                "--build",
-                "--preset",
-                "Debug",
-                "${command:cmake.buildDirectory}",
-                "-j",
-                "8"
-            ],
-            "options": {
-                "cwd": "${workspaceFolder}"
-            },
-            "problemMatcher": [
-                "$gcc"
-            ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
         }
     ]
 }

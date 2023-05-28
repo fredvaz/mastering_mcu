@@ -4,3 +4,4 @@
 **/FATFS/
 **/Middlewares/
 **/USB_HOST/
+build/

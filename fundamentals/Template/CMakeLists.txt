@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.22)
 #
 # Core project settings
 #
-project(STM32F469NI-DK-LED)          # Modified
+project(LEDBlinking)          # Modified
 enable_language(C CXX ASM)
 message("Build type: " ${CMAKE_BUILD_TYPE})
 
@@ -23,10 +23,10 @@ set(PROJ_PATH                       ${CMAKE_CURRENT_SOURCE_DIR})
 # Needs to be set properly for your MCU
 #
 set(CPU_PARAMETERS
-    -mthumb
-    -mcpu=cortex-m4                 # Modified
+    # -mcpu=cortex-m4                 # Modified
     -mfpu=fpv4-sp-d16               # Modified
     -mfloat-abi=hard                # Modified
+    -mthumb
 )
 
 # Set linker script
@@ -38,15 +38,30 @@ set(EXECUTABLE                      ${CMAKE_PROJECT_NAME})
 #
 set(sources_SRCS                    # Modified
     ${PROJ_PATH}/Core/Src/main.c
+    ${PROJ_PATH}/Core/Src/stm32f4xx_hal_msp.c
+    ${PROJ_PATH}/Core/Src/stm32f4xx_hal_timebase_tim.c
+    ${PROJ_PATH}/Core/Src/stm32f4xx_it.c
     ${PROJ_PATH}/Core/Src/syscalls.c
     ${PROJ_PATH}/Core/Src/sysmem.c
-    # ${PROJ_PATH}/Core/Src/system_stm32f4xx.c
-    # ${PROJ_PATH}/Core/Src/stm32f4xx_it.c
-    # ${PROJ_PATH}/Core/Startup/startup_stm32f469nihx.s
-    # ${PROJ_PATH}/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c
-    # ${PROJ_PATH}/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c
-    # ${PROJ_PATH}/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c
-    # ${PROJ_PATH}/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c
+    ${PROJ_PATH}/Core/Src/system_stm32f4xx.c
+    ${PROJ_PATH}/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c
+    ${PROJ_PATH}/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c
+    ${PROJ_PATH}/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c
+    ${PROJ_PATH}/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c
+    ${PROJ_PATH}/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c
+    ${PROJ_PATH}/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c
+    ${PROJ_PATH}/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c
+    ${PROJ_PATH}/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c
+    ${PROJ_PATH}/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c
+    ${PROJ_PATH}/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c
+    ${PROJ_PATH}/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c
+    ${PROJ_PATH}/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c
+    ${PROJ_PATH}/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c
+    ${PROJ_PATH}/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c
+    ${PROJ_PATH}/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c
+    ${PROJ_PATH}/Drivers/STM32F4xx_HAL_Driver/Src/
+    ${PROJ_PATH}/Drivers/STM32F4xx_HAL_Driver/Src/
+    ${PROJ_PATH}/Drivers/STM32F4xx_HAL_Driver/Src/
 )
 
 #
@@ -55,6 +70,7 @@ set(sources_SRCS                    # Modified
 set(include_path_DIRS               # Modified
     ${PROJ_PATH}/Core/Inc
     ${PROJ_PATH}/Drivers/STM32F4xx_HAL_Driver/Inc
+    ${PROJ_PATH}/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy
     ${PROJ_PATH}/Drivers/CMSIS/Device/ST/STM32F4xx/Include
     ${PROJ_PATH}/Drivers/CMSIS/Include
 )
@@ -68,8 +84,14 @@ set(symbols_SYMB                    # Modified
     "STM32F469xx"
 )
 
+# Link directories setup
+# Must be before executable is added
+# link_directories(${EXECUTABLE} ${link_DIRS})
+
 # Executable files
 add_executable(${EXECUTABLE} ${sources_SRCS})
+# Add sources to executable
+target_sources(${EXECUTABLE} PUBLIC ${sources_SRCS})
 
 # Include paths
 target_include_directories(${EXECUTABLE} PRIVATE ${include_path_DIRS})
@@ -77,30 +99,22 @@ target_include_directories(${EXECUTABLE} PRIVATE ${include_path_DIRS})
 # Project symbols
 target_compile_definitions(${EXECUTABLE} PRIVATE ${symbols_SYMB})
 
+# Add linked libraries
+# target_link_libraries(${EXECUTABLE} ${link_LIBS})
+
 # Compiler options
 target_compile_options(${EXECUTABLE} PRIVATE
-    ${CPU_PARAMETERS}
-    -Wall
-    -Wextra
-    -Wpedantic
-    -Wno-unused-parameter
-    # Full debug configuration
-    -Og -g3 -ggdb
+    -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb
 )
 
 # Linker options
 target_link_options(${EXECUTABLE} PRIVATE
+    -mcpu=cortex-m4 
     -T${linker_script_SRC}
-    ${CPU_PARAMETERS}
-    -Wl,-Map=${CMAKE_PROJECT_NAME}.map
     --specs=nosys.specs
-    -u _printf_float                    # STDIO float formatting support
-    -Wl,--start-group
-    -lc
-    -lm
-    -lstdc++
-    -lsupc++
-    -Wl,--end-group
+    -Wl,-Map=${CMAKE_PROJECT_NAME}.map
+    -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb
+    -Wl,--start-group -lc -lm -Wl,--end-group
     -Wl,--print-memory-usage
 )
 
